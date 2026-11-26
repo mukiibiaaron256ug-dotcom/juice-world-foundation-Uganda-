@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ways to Help | Juice World Foundation Uganda</title>
+
 <style>
 body{
 margin:0;
@@ -88,7 +88,31 @@ margin-top:40px;
 }
 .site-nav a:hover{background:#f4f7f4;color:#D4AF37}
 
+
+/* === JWF shared live theme === */
+.jwf-stars{position:fixed;inset:0;pointer-events:none;z-index:-1;overflow:hidden;background:
+radial-gradient(circle at 15% 20%,rgba(255,212,71,.16) 0 1px,transparent 2px),
+radial-gradient(circle at 70% 15%,rgba(255,255,255,.20) 0 1px,transparent 2px),
+radial-gradient(circle at 40% 65%,rgba(255,255,255,.15) 0 1px,transparent 2px),
+radial-gradient(circle at 85% 75%,rgba(255,212,71,.18) 0 1px,transparent 2px);
+background-size:140px 140px,190px 190px,230px 230px,170px 170px;
+animation:jwfTwinkle 5s linear infinite}
+.jwf-stars:before,.jwf-stars:after{content:"";position:absolute;inset:-30%;
+background-image:radial-gradient(circle,rgba(255,255,255,.7) 0 1px,transparent 1.5px);
+background-size:90px 90px;animation:jwfDrift 18s linear infinite}
+.jwf-stars:after{background-size:130px 130px;opacity:.45;animation-duration:27s;animation-direction:reverse}
+@keyframes jwfTwinkle{50%{opacity:.65}100%{opacity:1}}
+@keyframes jwfDrift{to{transform:translate3d(80px,60px,0)}}
+body{position:relative;min-height:100vh}
+.btn,.button,.hero-buttons a,.footer-whatsapp{
+box-shadow:0 8px 0 rgba(0,0,0,.14),0 14px 28px rgba(0,0,0,.16);
+transform:translateY(0);transition:transform .18s,box-shadow .18s}
+.btn:hover,.button:hover,.hero-buttons a:hover,.footer-whatsapp:hover{
+transform:translateY(-4px);box-shadow:0 12px 0 rgba(0,0,0,.12),0 18px 32px rgba(0,0,0,.18)}
+.site-menu-btn,.menu-btn{filter:drop-shadow(0 5px 5px rgba(0,0,0,.25))}
+
 </style>
+
 <style>
 
 /* === Juice World Foundation shared navigation === */
@@ -157,10 +181,10 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;back
 h1,h2,h3{color:var(--green)}.card,.project,.event,.faq,.member,.welcome,.feature,.gallery>div{background:rgba(255,255,255,.98);color:#333;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.12);border:1px solid rgba(11,110,47,.08)}
 .btn,.button,.contact-buttons a,.hero-buttons a{display:inline-block!important;border:0!important;border-radius:18px!important;padding:14px 22px!important;font-weight:800!important;text-decoration:none!important;transform:translateY(0);box-shadow:7px 7px 13px rgba(0,0,0,.24),inset 1px 1px 0 rgba(255,255,255,.25)!important;transition:transform .2s,box-shadow .2s!important}.btn:hover,.button:hover,.contact-buttons a:hover,.hero-buttons a:hover{transform:translateY(-4px)!important;box-shadow:9px 11px 18px rgba(0,0,0,.28),inset 1px 1px 0 rgba(255,255,255,.3)!important}.whatsapp{background:#25d366!important;color:#fff!important}.donate,.call{background:linear-gradient(145deg,#fff,#e9f1eb)!important;color:var(--green)!important;border:1px solid var(--green)!important}
 footer,.footer{position:relative;z-index:1;background:linear-gradient(180deg,#075a2a,#032b15);color:#fff!important;padding:28px 18px;margin-top:35px;border-top:1px solid rgba(212,175,55,.3)}footer p,footer a,.footer p,.footer a{color:#eaf4ed}.footer h3,footer h3{color:#ffd75a}
-.hero-slider{position:relative;z-index:1;height:560px;overflow:hidden;background:#052516}.slide{background-size:cover;background-position:center}.slide:after{background:linear-gradient(90deg,rgba(0,25,10,.86),rgba(0,35,12,.45),rgba(0,0,0,.15))}.slide1{background-image:url("https://commons.wikimedia.org/wiki/Special:FilePath/Children_Playing_uganda.jpg")}.slide2{background-image:url("https://commons.wikimedia.org/wiki/Special:FilePath/African_kids_possing_for_a_Photo.jpg")}.slide3{background-image:url("https://commons.wikimedia.org/wiki/Special:FilePath/Ugandan_school_Children.jpg")}.welcome-image{background-image:url("https://commons.wikimedia.org/wiki/Special:FilePath/Children_smiling.jpg")!important;background-size:cover;background-position:center}
-/* African children welcome visual: coded as the hero/welcome background above, no image upload required. */
-@media(max-width:600px){.site-header{padding:8px 12px 8px 14px}.brand img{width:46px;height:46px}.brand strong{font-size:15px}.brand small{font-size:9px}.menu-toggle{width:44px;height:44px;font-size:27px}.page-hero{padding:48px 18px 40px}.page-hero p{font-size:16px}.container{margin:22px 14px;padding:22px 17px}.main-content{padding:22px 14px 40px}.hero-slider{height:540px}}
-</style></head>
+@media(max-width:600px){.site-header{padding:8px 12px 8px 14px}.brand img{width:46px;height:46px}.brand strong{font-size:15px}.brand small{font-size:9px}.menu-toggle{width:44px;height:44px;font-size:27px}.page-hero{padding:48px 18px 40px}.page-hero p{font-size:16px}.container{margin:22px 14px;padding:22px 17px}.main-content{padding:22px 14px 40px}}
+</style>
+</head>
+
 <body><div aria-hidden="true" class="stars-layer"></div>
 <header class="site-header">
 <a aria-label="Juice World Foundation Uganda home" class="brand" href="index.html">
@@ -170,34 +194,60 @@ footer,.footer{position:relative;z-index:1;background:linear-gradient(180deg,#07
 <button aria-expanded="false" aria-label="Open menu" class="menu-toggle" id="siteMenuToggle">☰</button>
 </header>
 <nav class="site-nav" id="siteNav"><a href="index.html">🏠 Home</a><a href="our-story.html">📖 Our Story</a><a href="projects.html">❤️ Projects</a><a href="gallery.html">🖼 Gallery</a><a href="team.html">👥 Team</a><a href="events.html">🎉 Events</a><a href="news.html">📰 News</a><a href="partners.html">🤝 Partners</a><a href="ways-to-help.html">💚 Ways to Help</a><a href="become-a-sponsor.html">⭐ Sponsor</a><a href="volunteer.html">🙌 Volunteer</a><a href="impact.html">🌍 Impact</a><a href="success-stories.html">✨ Success Stories</a><a href="faq.html">❓ FAQ</a><a href="contact.html">📞 Contact</a><a href="policies.html">📜 Policies</a></nav><section class="page-hero"><h1>Ways to Help</h1></section><main class="main-content"><div class="container">
+
+
+
+
+
 <div class="card">
 <h2>❤️ Make a Donation</h2>
 <p>Your financial support helps provide food, education, healthcare, and other essential needs for children.</p>
 </div>
+
 <div class="card">
 <h2>🤝 Become a Volunteer</h2>
 <p>Share your time, skills, and experience by supporting our programs and community activities.</p>
 </div>
+
 <div class="card">
 <h2>📢 Spread the Word</h2>
 <p>Tell your family, friends, churches, schools, and communities about our mission.</p>
 </div>
+
 <div class="card">
 <h2>🎁 Donate Items</h2>
 <p>Support us by donating food, clothes, shoes, books, school supplies, toys, or other useful items.</p>
 </div>
+
 <div class="card">
 <h2>🏢 Partner With Us</h2>
 <p>Businesses, NGOs, churches, schools, and community groups are welcome to work with us.</p>
 </div>
+
 <div class="card">
 <h2>🙏 Pray For Our Mission</h2>
 <p>Your prayers encourage us as we continue serving vulnerable children and their families.</p>
 </div>
+
 <a class="button" href="contact.html">
 Contact Us Today
 </a>
-</div></main><footer><div style="max-width:1100px;margin:auto;text-align:center"><h3>Juice World Foundation Uganda</h3><p>Giving Hope, Love and a Better Future to Every Child.</p><p><strong>Founder:</strong> MUKIIBI AARON</p><a class="btn whatsapp" href="https://wa.me/256793017197">💬 WhatsApp: 0793017197</a><p style="margin-top:18px;font-size:13px">© 2026 Juice World Foundation Uganda. All rights reserved.</p></div></footer>
+
+
+
+</div></main><footer><div style="max-width:1100px;margin:auto;text-align:center"><h3>Juice World Foundation Uganda</h3><p>Giving Hope, Love and a Better Future to Every Child.</p><p><strong>Founder:</strong> MUKIIBI AARON</p><a class="btn whatsapp" href="https://wa.me/256740571426">💬 WhatsApp: 0740571426</a><p style="margin-top:18px;font-size:13px">© 2026 Juice World Foundation Uganda. All rights reserved.</p></div></footer>
+
+
+
+
+
+<script>
+function toggleSiteMenu(){
+    const nav=document.getElementById('siteNav');
+    if(nav) nav.classList.toggle('open');
+}
+</script>
+
 <script>
 (function(){
  const btn=document.getElementById('siteMenuToggle'); const nav=document.getElementById('siteNav');
