@@ -1,4 +1,28 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Donate | Juice World Foundation Uganda</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Donate | Juice World Foundation Uganda</title>
+<style>
+/* === JWF shared live theme === */
+.jwf-stars{position:fixed;inset:0;pointer-events:none;z-index:-1;overflow:hidden;background:
+radial-gradient(circle at 15% 20%,rgba(255,212,71,.16) 0 1px,transparent 2px),
+radial-gradient(circle at 70% 15%,rgba(255,255,255,.20) 0 1px,transparent 2px),
+radial-gradient(circle at 40% 65%,rgba(255,255,255,.15) 0 1px,transparent 2px),
+radial-gradient(circle at 85% 75%,rgba(255,212,71,.18) 0 1px,transparent 2px);
+background-size:140px 140px,190px 190px,230px 230px,170px 170px;
+animation:jwfTwinkle 5s linear infinite}
+.jwf-stars:before,.jwf-stars:after{content:"";position:absolute;inset:-30%;
+background-image:radial-gradient(circle,rgba(255,255,255,.7) 0 1px,transparent 1.5px);
+background-size:90px 90px;animation:jwfDrift 18s linear infinite}
+.jwf-stars:after{background-size:130px 130px;opacity:.45;animation-duration:27s;animation-direction:reverse}
+@keyframes jwfTwinkle{50%{opacity:.65}100%{opacity:1}}
+@keyframes jwfDrift{to{transform:translate3d(80px,60px,0)}}
+body{position:relative;min-height:100vh}
+.btn,.button,.hero-buttons a,.footer-whatsapp{
+box-shadow:0 8px 0 rgba(0,0,0,.14),0 14px 28px rgba(0,0,0,.16);
+transform:translateY(0);transition:transform .18s,box-shadow .18s}
+.btn:hover,.button:hover,.hero-buttons a:hover,.footer-whatsapp:hover{
+transform:translateY(-4px);box-shadow:0 12px 0 rgba(0,0,0,.12),0 18px 32px rgba(0,0,0,.18)}
+.site-menu-btn,.menu-btn{filter:drop-shadow(0 5px 5px rgba(0,0,0,.25))}
+
+body{margin:0;font-family:Arial,sans-serif;background:#f4f7f4;color:#333}header{background:#0b6e2f;color:#fff;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}.brand{font-weight:800;font-size:20px}.brand span{color:#ffd447}.menu-btn{font-size:34px;cursor:pointer}nav{display:none;background:#fff;position:sticky;top:70px;z-index:9}nav.open{display:block}nav a{display:block;padding:14px 18px;color:#0b6e2f;text-decoration:none;font-weight:700;border-bottom:1px solid #eee}main{max-width:1000px;margin:40px auto;padding:0 18px}.card{background:#fff;padding:30px;border-radius:22px;box-shadow:0 10px 25px #0001}h1,h2{color:#0b6e2f}p{line-height:1.8}</style><style>
 :root{--green:#0b6e2f;--green2:#075a2a;--deep:#03170c;--gold:#d4af37;--gold2:#ffd75a;--white:#fff;--muted:#dce9e1}
 *{box-sizing:border-box}html{scroll-behavior:smooth;min-height:100%;overflow-x:hidden}body{margin:0;min-height:100vh;font-family:Arial,Helvetica,sans-serif;color:#f7fff9;background:radial-gradient(circle at 20% 10%,rgba(212,175,55,.12),transparent 25%),radial-gradient(circle at 85% 35%,rgba(11,110,47,.22),transparent 30%),linear-gradient(180deg,#03170c 0%,#052516 45%,#f4f7f4 45%,#f4f7f4 100%);overflow-x:hidden;position:relative}
 body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background-image:radial-gradient(circle,rgba(255,255,255,.95) 0 1px,transparent 1.7px),radial-gradient(circle,rgba(255,215,90,.8) 0 1.2px,transparent 1.8px);background-size:90px 90px,145px 145px;background-position:12px 18px,40px 70px;opacity:.35;animation:stars 8s linear infinite}
@@ -13,18 +37,17 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;back
 h1,h2,h3{color:var(--green)}.card,.project,.event,.faq,.member,.welcome,.feature,.gallery>div{background:rgba(255,255,255,.98);color:#333;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.12);border:1px solid rgba(11,110,47,.08)}
 .btn,.button,.contact-buttons a,.hero-buttons a{display:inline-block!important;border:0!important;border-radius:18px!important;padding:14px 22px!important;font-weight:800!important;text-decoration:none!important;transform:translateY(0);box-shadow:7px 7px 13px rgba(0,0,0,.24),inset 1px 1px 0 rgba(255,255,255,.25)!important;transition:transform .2s,box-shadow .2s!important}.btn:hover,.button:hover,.contact-buttons a:hover,.hero-buttons a:hover{transform:translateY(-4px)!important;box-shadow:9px 11px 18px rgba(0,0,0,.28),inset 1px 1px 0 rgba(255,255,255,.3)!important}.whatsapp{background:#25d366!important;color:#fff!important}.donate,.call{background:linear-gradient(145deg,#fff,#e9f1eb)!important;color:var(--green)!important;border:1px solid var(--green)!important}
 footer,.footer{position:relative;z-index:1;background:linear-gradient(180deg,#075a2a,#032b15);color:#fff!important;padding:28px 18px;margin-top:35px;border-top:1px solid rgba(212,175,55,.3)}footer p,footer a,.footer p,.footer a{color:#eaf4ed}.footer h3,footer h3{color:#ffd75a}
-.hero-slider{position:relative;z-index:1;height:560px;overflow:hidden;background:#052516}.slide{background-size:cover;background-position:center}.slide:after{background:linear-gradient(90deg,rgba(0,25,10,.86),rgba(0,35,12,.45),rgba(0,0,0,.15))}.slide1{background-image:url("https://commons.wikimedia.org/wiki/Special:FilePath/Children_Playing_uganda.jpg")}.slide2{background-image:url("https://commons.wikimedia.org/wiki/Special:FilePath/African_kids_possing_for_a_Photo.jpg")}.slide3{background-image:url("https://commons.wikimedia.org/wiki/Special:FilePath/Ugandan_school_Children.jpg")}.welcome-image{background-image:url("https://commons.wikimedia.org/wiki/Special:FilePath/Children_smiling.jpg")!important;background-size:cover;background-position:center}
-/* African children welcome visual: coded as the hero/welcome background above, no image upload required. */
-@media(max-width:600px){.site-header{padding:8px 12px 8px 14px}.brand img{width:46px;height:46px}.brand strong{font-size:15px}.brand small{font-size:9px}.menu-toggle{width:44px;height:44px;font-size:27px}.page-hero{padding:48px 18px 40px}.page-hero p{font-size:16px}.container{margin:22px 14px;padding:22px 17px}.main-content{padding:22px 14px 40px}.hero-slider{height:540px}}
-</style></head><body><div class="stars-layer" aria-hidden="true"></div>
+@media(max-width:600px){.site-header{padding:8px 12px 8px 14px}.brand img{width:46px;height:46px}.brand strong{font-size:15px}.brand small{font-size:9px}.menu-toggle{width:44px;height:44px;font-size:27px}.page-hero{padding:48px 18px 40px}.page-hero p{font-size:16px}.container{margin:22px 14px;padding:22px 17px}.main-content{padding:22px 14px 40px}}
+</style>
+</head><body><div aria-hidden="true" class="stars-layer"></div>
 <header class="site-header">
-  <a class="brand" href="index.html" aria-label="Juice World Foundation Uganda home">
-    <img src="images/logo.svg" alt="Juice World Foundation Uganda logo">
-    <div><strong>Juice World Foundation Uganda</strong><small>Giving Hope • Love • A Better Future</small></div>
-  </a>
-  <button class="menu-toggle" id="siteMenuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+<a aria-label="Juice World Foundation Uganda home" class="brand" href="index.html">
+<img alt="Juice World Foundation Uganda logo" src="images/logo.svg"/>
+<div><strong>Juice World Foundation Uganda</strong><small>Giving Hope • Love • A Better Future</small></div>
+</a>
+<button aria-expanded="false" aria-label="Open menu" class="menu-toggle" id="siteMenuToggle">☰</button>
 </header>
-<nav class="site-nav" id="siteNav"><a href="index.html">🏠 Home</a><a href="our-story.html">📖 Our Story</a><a href="projects.html">❤️ Projects</a><a href="gallery.html">🖼 Gallery</a><a href="team.html">👥 Team</a><a href="events.html">🎉 Events</a><a href="news.html">📰 News</a><a href="partners.html">🤝 Partners</a><a href="ways-to-help.html">💚 Ways to Help</a><a href="become-a-sponsor.html">⭐ Sponsor</a><a href="volunteer.html">🙌 Volunteer</a><a href="impact.html">🌍 Impact</a><a href="success-stories.html">✨ Success Stories</a><a href="faq.html">❓ FAQ</a><a href="contact.html">📞 Contact</a><a href="policies.html">📜 Policies</a></nav><section class="page-hero"><h1>Support Our Mission</h1><p>Your gift helps us bring hope, love and practical support to vulnerable children.</p></section><main class="main-content"><div class="container"><h2>Donate / Become a Sponsor</h2><p>Every contribution helps Juice World Foundation Uganda continue serving children and strengthening communities.</p><a class="btn whatsapp" href="https://wa.me/256793017197">💬 Contact Aaron on WhatsApp</a><a class="btn donate" href="become-a-sponsor.html">⭐ Become a Sponsor</a></div></main><footer><div style="max-width:1100px;margin:auto;text-align:center"><h3>Juice World Foundation Uganda</h3><p>Giving Hope, Love and a Better Future to Every Child.</p><p><strong>Founder:</strong> MUKIIBI AARON</p><a class="btn whatsapp" href="https://wa.me/256793017197">💬 WhatsApp: 0793017197</a><p style="margin-top:18px;font-size:13px">© 2026 Juice World Foundation Uganda. All rights reserved.</p></div></footer>
+<nav class="site-nav" id="siteNav"><a href="index.html">🏠 Home</a><a href="our-story.html">📖 Our Story</a><a href="projects.html">❤️ Projects</a><a href="gallery.html">🖼 Gallery</a><a href="team.html">👥 Team</a><a href="events.html">🎉 Events</a><a href="news.html">📰 News</a><a href="partners.html">🤝 Partners</a><a href="ways-to-help.html">💚 Ways to Help</a><a href="become-a-sponsor.html">⭐ Sponsor</a><a href="volunteer.html">🙌 Volunteer</a><a href="impact.html">🌍 Impact</a><a href="success-stories.html">✨ Success Stories</a><a href="faq.html">❓ FAQ</a><a href="contact.html">📞 Contact</a><a href="policies.html">📜 Policies</a></nav><section class="page-hero"><h1>Donate</h1></section><main class="main-content"><div class="container"><section class="card"><h1>Donate</h1><p>Your support helps us give hope, love and a better future to children and families.</p><h2>Use the payment options provided by the foundation when donation services are enabled.</h2></section></div></main><footer><div style="max-width:1100px;margin:auto;text-align:center"><h3>Juice World Foundation Uganda</h3><p>Giving Hope, Love and a Better Future to Every Child.</p><p><strong>Founder:</strong> MUKIIBI AARON</p><a class="btn whatsapp" href="https://wa.me/256740571427">💬 WhatsApp: +256 740 571 427</a><p style="margin-top:18px;font-size:13px">© 2026 Juice World Foundation Uganda. All rights reserved.</p></div></footer>
 <script>
 (function(){
  const btn=document.getElementById('siteMenuToggle'); const nav=document.getElementById('siteNav');
