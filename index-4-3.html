@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juice World Foundation Uganda</title>
+<meta name="description" content="Giving Hope, Love and a Better Future to Every Child">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{background:#f4f7f4;color:#333}
+header{background:#0b6e2f;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:999}
+.logo{display:flex;align-items:center;gap:12px}
+.logo svg{width:70px;height:70px}
+.logo h2{color:#fff;font-size:22px}
+.menu-btn{font-size:34px;color:#fff;cursor:pointer}
+nav{display:none;background:#fff;box-shadow:0 5px 20px rgba(0,0,0,.15)}
+nav.active{display:block}
+nav a{display:block;padding:18px;text-decoration:none;font-weight:bold;color:#0b6e2f;border-bottom:1px solid #eee}
+nav a:hover{background:#f4f4f4}
+.hero{padding:40px 25px}
+.hero h1{font-size:52px;line-height:1.1;margin-bottom:15px}
+.hero h1 span{color:#0b6e2f}
+.hero p{font-size:20px;margin-bottom:30px;color:#555}
+.btn{display:block;text-align:center;padding:18px;margin-bottom:15px;border-radius:40px;text-decoration:none;font-size:20px;font-weight:bold}
+.whatsapp{background:#0b6e2f;color:#fff}
+.donate{background:#fff;color:#0b6e2f;border:2px solid #0b6e2f}
+.card{background:#fff;margin:20px;padding:30px;border-radius:20px;box-shadow:0 8px 25px rgba(0,0,0,.12)}
+.card h2{color:#0b6e2f;margin-bottom:15px;font-size:34px}
+.card p{font-size:19px;line-height:1.8}
+@media(min-width:900px){.hero,.card{max-width:1100px;margin:auto}.card{margin:30px auto}}
+</style>
+<style id="jwf-logo-style">
+.jwf-logo{width:70px;height:70px;display:block;flex:0 0 auto}
+@media(max-width:700px){.jwf-logo{width:55px;height:55px}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">
+<svg class="jwf-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" aria-label="Juice World Foundation Uganda logo" role="img">
+<defs>
+<linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0F8A4B"/><stop offset="1" stop-color="#D4AF37"/></linearGradient>
+<linearGradient id="green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#19A85A"/><stop offset="1" stop-color="#075A2A"/></linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE27A"/><stop offset="1" stop-color="#C99516"/></linearGradient>
+</defs>
+<circle cx="100" cy="100" r="91" fill="#fff"/>
+<circle cx="100" cy="100" r="87" fill="none" stroke="url(#ring)" stroke-width="7"/>
+<circle cx="100" cy="100" r="78" fill="#F7FBF8" stroke="#0F8A4B" stroke-width="2"/>
+<circle cx="100" cy="76" r="34" fill="url(#green)" stroke="#D4AF37" stroke-width="3"/>
+<ellipse cx="100" cy="76" rx="17" ry="34" fill="none" stroke="#fff" stroke-width="2"/>
+<path d="M66 76h68M70 62h60M70 90h60" fill="none" stroke="#fff" stroke-width="2"/>
+<path d="M45 126c12-17 27-23 43-13l12 8 12-8c16-10 31-4 43 13" fill="none" stroke="url(#green)" stroke-width="9" stroke-linecap="round"/>
+<path d="M72 127c9 9 18 14 28 14s19-5 28-14" fill="none" stroke="#0F8A4B" stroke-width="6" stroke-linecap="round"/>
+<path d="M100 137c-4-5-17-13-17-23 0-7 9-10 17-2 8-8 17-5 17 2 0 10-13 18-17 23z" fill="url(#gold)"/>
+<path d="M100 24v-8M72 29l-4-7M128 29l4-7" stroke="#D4AF37" stroke-width="3" stroke-linecap="round"/>
+</svg>
+<h2>Juice World Foundation</h2>
+</div>
+<div class="menu-btn" onclick="menu()">☰</div>
+</header>
+<nav id="nav">
+<a href="index.html">🏠 Home</a>
+<a href="our-story.html">📖 Our Story</a>
+<a href="projects.html">❤️ Projects</a>
+<a href="gallery.html">🖼 Gallery</a>
+<a href="team.html">👥 Team</a>
+<a href="events.html">🎉 Events</a>
+<a href="news.html">📰 News</a>
+<a href="partners.html">🤝 Partners</a>
+<a href="ways-to-help.html">💚 Ways to Help</a>
+<a href="contact.html">📞 Contact</a>
+<a href="policies.html">📜 Policies</a>
+</nav>
+<section class="hero">
+<h1>Juice World Foundation <span>Uganda</span></h1>
+<p>Giving Hope, Love and a Better Future to Every Child.</p>
+<a class="btn whatsapp" href="https://wa.me/256745688224">Contact Us on WhatsApp</a>
+<a class="btn donate" href="donate.html">Donate Now</a>
+</section>
+<section class="card">
+<h2>Welcome to Juice World Foundation Uganda</h2>
+<p>Juice World Foundation Uganda is a Christian, God-fearing community organisation committed to bringing hope, love and practical support to vulnerable children and families throughout Uganda.</p>
+</section>
+<script>
+function menu(){document.getElementById('nav').classList.toggle('active');}
+</script>
+</body></html>
